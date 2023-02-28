@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "albumName": "roads"
+  },
+  {
+    "id": 1,
+    "albumName": "animals"
+  },
+  {
+    "id": 2,
+    "albumName": "plants"
+  },
+  {
+    "id": 3,
+    "albumName": "cars"
+  },
+  {
+    "id": 4,
+    "albumName": ""
+  },
+  {
+    "id": 5,
+    "albumName": ""
+  }
+]

@@ -1,0 +1,73 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-500%);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(10%);
+        opacity: 0.75;
+    }
+
+    75% {
+        opacity: 0.85;
+        transform: translateX(-5%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bs--col {
+    padding: 15px;
+}
+
+img[class*=PhotoAlbums__Album],
+.PhotoAlbums__Album--Description--Container {
+    animation: 0.7s ease-out 0s 1 slideInFromLeft;
+}
+
+img[class*=PhotoAlbums__Album] {
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.PhotoAlbums__Album--Description--Container {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    visibility: hidden;
+    opacity: 0;
+    color: #fff;
+    background: rgba(0, 140, 206, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .3s;
+}
+
+.PhotoAlbums__Album--Container:hover .PhotoAlbums__Album--Description--Container {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.PhotoAlbums__Album--Description {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .2s;
+    transform: translateY(1.2em);
+}
+
+.PhotoAlbums__Album--Container:hover .PhotoAlbums__Album--Description {
+    transform: translateY(0);
+    cursor: pointer;
+}

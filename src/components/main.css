@@ -1,0 +1,48 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: rgb(91, 83, 98);
+    margin-bottom: 3.9em;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: 1s ease-out 0s 1 fadeIn;
+}
+
+.bodyBgColor{
+    transition: 2s all ease-in;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+}
